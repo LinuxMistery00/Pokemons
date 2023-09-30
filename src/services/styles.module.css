@@ -1,0 +1,66 @@
+.Title {
+    text-align: center;
+    font-size: 8vh;
+}
+
+.Pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.Pokemon {
+    width: calc(20% - 2vh);
+    margin: 1vh;
+    border: 0.5vh solid #111213;
+    border-radius: 1.5vh;
+    transition: all 0.2s;
+}
+
+.Pokemon:hover {
+    margin-top: -1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.PokemonSprite {
+    width: 100%;
+}
+
+.PokemonInfo {
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.Final {
+    background-color: #111213;
+    width: auto;
+    height: 15vh;
+}
+
+.PokeAPIImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vh;
+}
+
+@media (max-width: 1000px) {
+    .PokemonName {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 720px) {
+    .PokemonName {
+        font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .PokemonName {
+        font-size: 0.8vh;
+    }
+}
